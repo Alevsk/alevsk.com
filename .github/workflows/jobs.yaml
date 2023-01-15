@@ -1,0 +1,40 @@
+name: Workflow
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+
+# This ensures that previous jobs for the PR are canceled when the PR is
+# updated.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  publish-docker:
+    name: Build and push Docker image
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set build time
+        run: |
+          echo "BUILD_TIME=$(date -u +%Y-%m-%dT%H-%M-%SZ 2>/dev/null)" >> $GITHUB_ENV
+          echo "HUMAN_DATE=$(date 2>/dev/null)" >> $GITHUB_ENV
+      - name: Build and push
+        uses: docker/build-push-action@v1
+        with:
+          platforms: linux/amd64
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: alevsk/alevsk.com
+          push: true
+          build-args: build_time=${{env.HUMAN_DATE }}
+          tags: latest, RELEASE.${{ env.BUILD_TIME }}

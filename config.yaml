@@ -1,0 +1,24 @@
+baseURL: "/"
+languageCode: "en-us"
+title: "Alevski's Blog"
+theme: "hugo-researcher"
+
+params:
+  author: "Lenin Alevski"
+  description: "Software Engineering and Information Security"
+  favicon: "/favicon.ico"
+  footer:
+    text: "0x67BA54C7DE3DD14A"
+    url: "https://www.alevsk.com"
+  socialIcons:
+    - icon: "fab fa-twitter"
+      title: "Twitter"
+      url: "https://twitter.com/alevskey"
+    - icon: "fab fa-linkedin"
+      title: "Linkedin"
+      url: "https://www.linkedin.com/in/alevsk"
+    - icon: "fab fa-github"
+      title: "Github"
+      url: "https://github.com/alevsk"
+
+
