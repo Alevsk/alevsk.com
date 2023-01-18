@@ -1,6 +1,9 @@
 name: Workflow
 
 on:
+  pull_request:
+    branches:
+      - master
   push:
     branches:
       - master
@@ -12,12 +15,29 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  publish-docker:
-    name: Build and push Docker image
+  build-container:
+    name: Build container image
     runs-on: ubuntu-latest
     strategy:
       matrix:
         os: [ubuntu-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup buildx
+        uses: docker/setup-buildx-action@v1
+      - name: Build container
+        run: |
+          make docker
+  build-and-push-container:
+    name: Build and push container image
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    needs:
+      - build-container
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     steps:
       - name: Checkout
         uses: actions/checkout@v3
