@@ -3,7 +3,7 @@ title: I used AI to successfully migrate my website infrastructure
 author: Alevsk
 type: post
 date: 2023-01-17T00:41:33+00:00
-url: /2023/01/i-used-ai-to-successfully-migreate-my-website-infrastructure/
+url: /2023/01/i-used-ai-to-successfully-migrate-my-website-infrastructure/
 categories:
   - AI
   - Personal
