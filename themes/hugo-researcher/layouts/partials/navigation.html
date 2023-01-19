@@ -5,7 +5,8 @@
 	<a href="{{ "/posts" | relURL }}">{{ with .Site.Params.archive }}{{ . }}{{ else }}{{ i18n "archive" }}{{ end }}</a>
 	<a href="{{ "/tags" | relURL }}">{{ with .Site.Params.tags }}{{ . }}{{ else }}{{ i18n "tags" }}{{ end }}</a>
 	<a href="{{ "/about" | relURL }}">{{ with .Site.Params.about }}{{ . }}{{ else }}{{ i18n "about" }}{{ end }}</a>
-	<a href="{{ "/work-experience" | relURL }}">{{ with .Site.Params.about }}{{ . }}{{ else }}{{ i18n "career" }}{{ end }}</a>
+	<a href="{{ "/work-experience" | relURL }}">{{ with .Site.Params.career }}{{ . }}{{ else }}{{ i18n "career" }}{{ end }}</a>
+	<a href="{{ "/talks" | relURL }}">{{ with .Site.Params.talks }}{{ . }}{{ else }}{{ i18n "talks" }}{{ end }}</a>
 
 
 	{{ range $element := .Site.Params.Links }}

@@ -52,5 +52,5 @@ publishDateShort:
   other: >-
     {{ .PublishDate.Day }} {{ index $.Site.Data.months_fr (printf "%d" .PublishDate.Month) }} {{ .PublishDate.Year }}
 
-career:
-  other: Carrière
+talks:
+  other: Talks
