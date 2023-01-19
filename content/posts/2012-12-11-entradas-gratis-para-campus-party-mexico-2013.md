@@ -20,7 +20,7 @@ categories:
   - Personal
   - Programming
   - Social Media
-  - Robótica
+  - Robotics
   - SEO
   - Snippets
   - Soundtracks

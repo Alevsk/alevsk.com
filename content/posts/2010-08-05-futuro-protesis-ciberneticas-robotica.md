@@ -5,7 +5,7 @@ type: post
 date: 2010-08-05T22:57:36+00:00
 url: /2010/08/futuro-protesis-ciberneticas-robotica/
 categories:
-  - Robótica
+  - Robotics
   - Technology
 tags:
   - biomedicina

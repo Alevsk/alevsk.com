@@ -11,7 +11,7 @@ categories:
   - Networking
   - IT News
   - Programming
-  - Robótica
+  - Robotics
   - Sin categoría
   - Technology
 tags:
