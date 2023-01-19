@@ -11,7 +11,7 @@ categories:
   - Personal
   - Programming
   - Social Media
-  - Robótica
+  - Robotics
   - Technology
   - Tips
 tags:

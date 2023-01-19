@@ -21,7 +21,7 @@ categories:
   - Personal
   - Programming
   - Social Media
-  - Robótica
+  - Robotics
   - SEO
   - Sin categoría
   - Snippets
