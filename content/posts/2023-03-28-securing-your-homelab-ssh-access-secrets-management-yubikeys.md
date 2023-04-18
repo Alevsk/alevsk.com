@@ -2,7 +2,7 @@
 title: "Securing Your Homelab: SSH Access and Secrets Management with YubiKeys, 1Password, and Ansible"
 author: Alevsk
 type: post
-date: 2023-01-28T00:41:33+00:00
+date: 2023-03-28T00:41:33+00:00
 url: /2023/03/securing-your-homelab-ssh-access-secrets-management-yubikeys/
 categories:
   - HomeLab
