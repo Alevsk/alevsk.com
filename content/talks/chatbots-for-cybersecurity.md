@@ -38,7 +38,7 @@ While there’s no minimum required experience to attend, this talk will best su
 
 ## Slides
 
-- [Chatbots for Cybersecurity - Google Slides](https://docs.google.com/presentation/d/15LZNW-GPMWUplVEnqYOPpsn313id3wt_VBuvTWhguww/edit?usp=sharing)
+- [Chatbots for Cybersecurity - Google Slides](https://docs.google.com/presentation/d/1fUUcFi-Do2Ycm_GP8loVcqsQ6uNpb3ichGEMTp4QHLs)
 
 ## Recordings
 
