@@ -16,6 +16,8 @@ tags:
   - Security
   - Research
   - Automation
+images:
+  - /images/ansible-semaphore.jpg
 ---
 
 ![Ansible Semaphore](/images/ansible-semaphore.jpg)
