@@ -22,6 +22,8 @@ images:
 
 ![Ansible Semaphore](/images/ansible-semaphore.jpg)
 
+> This vulnerability has been reported to <https://www.cve.org/> and a CVE has been assigned 🎉. [Read about CVE-2023-39059](#cve-report-cve-2023-39059)
+
 In this article, I aim to talk about an interesting open-source project that I came across a couple of weeks ago while making some upgrades in my home lab. This project caught my attention and turned into the main subject of my weekend security research.
 
 - [Introduction](#introduction)
@@ -204,5 +206,15 @@ By taking advantage of this vulnerability, a malicious user could escalate privi
 ## Final Thoughts
 
 The utilization of `exec.Command` for invoking external binaries can provide powerful functionality, but it also exposes potential security risks if not handled with care, as seen in the case of Ansible Semaphore with ansible-playbook. It is imperative that developers consider security implications. Input validation and sanitization are critical to mitigate risks such as command injection vulnerabilities. Furthermore, it is advisable to be familiar with the documentation and understand the nature of the programs being integrated.
+
+## CVE Report (CVE-2023-39059)
+
+- **CVE ID**: `CVE-2023-3905`
+- **Product**: [ansible semaphore](https://github.com/ansible-semaphore/semaphore)
+- **Affected version**: [ansible semaphore v2.8.90](https://github.com/ansible-semaphore/semaphore/releases/tag/v2.8.90)
+- **Description**: An issue in ansible `semaphore v.2.8.90` allows a remote attacker to execute arbitrary code via a crafted payload to the extra variables parameter.
+- **Vulnerability Type**: Remote Command Execution (RCE)
+- **Root Cause**: Ansible Semaphore includes a feature called "Extra Variables." This feature can be accessed at `https://<semaphore-endpoint>/project/id/environment` and is directly associated with the ansible-playbook `--extra-vars` flag.
+- **Impact**: The `--extra-vars` parameter can be abused by a malicious user with low privileges to achieve Remote Command Execution (RCE) and read files and configurations, perform Server Side Request Forgery (SSRF), execute commands, and establish a reverse shell on the ansible server.
 
 Happy hacking
