@@ -12,4 +12,9 @@
             <a href="{{ .url | absURL }}" title="{{ .text }}"><small>{{ .text }}</small></a>
         </div>
     {{ end }}
+    {{ with .Site.Params.contact }}
+        <div class="container text-center">
+            <a href="{{ .url | absURL }}" title="{{ .text }}"><small>{{ .text }}</small></a>
+        </div>
+    {{ end }}
 </div>
