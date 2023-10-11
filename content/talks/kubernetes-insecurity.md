@@ -2,7 +2,7 @@
 title: Kubernetes (IN)security
 author: Alevsk
 type: pages
-date: 2023-01-18T05:09:45+00:00
+date: 2021-04-17T05:09:45+00:00
 
 ---
 
@@ -20,9 +20,9 @@ In this talk you will learn about Kubernetes and how it works, then you will exp
 
 ## Technical requirements
 
-- basic knowledge of cloud computing
-- basic/intermediate knowledge about Linux and containers.
-- basic knowledge about Internet protocols such as HTTP and DNS
+- Basic knowledge of cloud computing
+- Basic/intermediate knowledge about Linux and containers.
+- Basic knowledge about Internet protocols such as HTTP and DNS
 
 ## Who should attend
 

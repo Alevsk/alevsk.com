@@ -2,7 +2,7 @@
 title: Electromagnetic hacking and Introduction to SDR
 author: Alevsk
 type: pages
-date: 2023-01-18T05:09:45+00:00
+date: 2022-11-23T05:09:45+00:00
 
 ---
 
