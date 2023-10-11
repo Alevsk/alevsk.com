@@ -2,7 +2,7 @@
 title: Just enough cryptography to better secure your apps
 author: Alevsk
 type: pages
-date: 2023-01-18T05:09:45+00:00
+date: 2020-08-15T05:09:45+00:00
 
 ---
 
@@ -24,8 +24,8 @@ In this talk you will learn what tools are available to achieve exactly that.
 
 ## Technical requirements
 
-- basic knowledge of cryptography.
-- basic knowledge of programming and the `Go` programming language
+- Basic knowledge of cryptography.
+- Basic knowledge of programming and the `Go` programming language
 
 ## Who should attend
 

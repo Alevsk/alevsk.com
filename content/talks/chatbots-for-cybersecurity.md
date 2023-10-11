@@ -2,7 +2,7 @@
 title: Chatbots for Cybersecurity 
 author: Alevsk
 type: pages
-date: 2023-01-18T05:09:45+00:00
+date: 2023-04-25T05:09:45+00:00
 
 ---
 
@@ -22,8 +22,8 @@ By the end of the presentation, you'll have a better understanding of the potent
 
 ## Technical requirements
 
-- basic knowledge of python
-- basic knowledge about Internet protocols such as HTTP and DNS
+- Basic knowledge of python
+- Basic knowledge about Internet protocols such as HTTP and DNS
 
 ## Who should attend
 
@@ -38,7 +38,8 @@ While there’s no minimum required experience to attend, this talk will best su
 
 ## Slides
 
-- [Chatbots for Cybersecurity - Google Slides](https://docs.google.com/presentation/d/1fUUcFi-Do2Ycm_GP8loVcqsQ6uNpb3ichGEMTp4QHLs)
+- [Chatbots for Cybersecurity](https://docs.google.com/presentation/d/1fUUcFi-Do2Ycm_GP8loVcqsQ6uNpb3ichGEMTp4QHLs)
 
 ## Recordings
 
+- [03-25-2023 - Chatbots for Cybersecurity](https://youtu.be/y3tDR5-DHP0?si=DxAnx0lAe8vdAXqn&t=274)
