@@ -1,0 +1,354 @@
+{
+  "version": "2.0.5",
+  "summary": {
+    "title": "Container Security",
+    "owner": "alevsk",
+    "description": "",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Docker",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.0.5",
+        "cells": [
+          {
+            "position": {
+              "x": 20,
+              "y": 30
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Browser"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "5df805f3-4e40-4a75-8633-7606a30786c8",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Browser",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "providesAuthentication": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Response (HTTP/S)",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "HTTP/S",
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "d6a76092-1624-4c7a-8e55-c770978b79d5",
+            "source": {
+              "cell": "0c81bf24-e0b5-4ad0-80f6-a8293b197046"
+            },
+            "target": {
+              "cell": "5df805f3-4e40-4a75-8633-7606a30786c8"
+            },
+            "vertices": [
+              {
+                "x": 86.25,
+                "y": 190
+              }
+            ],
+            "labels": [
+              "Web Response (HTTP/S)"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Request (HTTP/S)",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "1708978e-fb4d-4b55-b9a1-c9910a0836cd",
+            "source": {
+              "cell": "5df805f3-4e40-4a75-8633-7606a30786c8"
+            },
+            "target": {
+              "cell": "0c81bf24-e0b5-4ad0-80f6-a8293b197046"
+            },
+            "vertices": [
+              {
+                "x": 251.25,
+                "y": 60
+              }
+            ],
+            "labels": [
+              "Web Request (HTTP/S)"
+            ]
+          },
+          {
+            "shape": "trust-broundary-curve",
+            "attrs": {
+              "line": {
+                "targetMarker": "",
+                "sourceMarker": ""
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "b0cbac15-cdad-4b27-8f38-6e3f6b38b827",
+            "source": {
+              "x": 140,
+              "y": 310
+            },
+            "target": {
+              "x": 400,
+              "y": 110
+            },
+            "vertices": [
+              {
+                "x": 200,
+                "y": 160
+              }
+            ]
+          },
+          {
+            "shape": "trust-broundary-curve",
+            "attrs": {
+              "line": {
+                "targetMarker": "",
+                "sourceMarker": ""
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "dd2ca44b-0eb3-4cbf-a5b2-2f6122b1255e",
+            "source": {
+              "x": 80,
+              "y": 310
+            },
+            "target": {
+              "x": 390,
+              "y": 60
+            },
+            "vertices": [
+              {
+                "x": 160,
+                "y": 130
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 202.5,
+              "y": 170
+            },
+            "size": {
+              "width": 100,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Application"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "0c81bf24-e0b5-4ad0-80f6-a8293b197046",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Process",
+              "name": "Application",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 250,
+              "y": 70
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Host"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "d248ddab-0e50-4c4e-99d8-c9deb39b4101",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Text",
+              "name": "Host",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 196.25,
+              "y": 270
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Containerd-shim\n(Root Process)"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "f9a69886-2c08-446a-95e2-5c895d359445",
+            "data": {
+              "type": "tm.Text",
+              "name": "Containerd-shim\n(Root Process)",
+              "hasOpenThreats": false
+            },
+            "zIndex": 13
+          },
+          {
+            "position": {
+              "x": 290,
+              "y": 120
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Docker Container "
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "28f64370-aad8-4307-b18a-316307a22383",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Text",
+              "name": "Docker Container ",
+              "hasOpenThreats": false
+            }
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "title": "Podman",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.0.5",
+        "cells": []
+      }
+    ],
+    "diagramTop": 2,
+    "reviewer": "",
+    "threatTop": 2
+  }
+}
