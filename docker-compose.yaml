@@ -2,6 +2,6 @@ version: "3.7"
 
 services:
   nginx:
-    image: "alevsk/alevsk.com:latest"
+    image: "docker.io/alevsk/alevsk.com:master-dev"
     ports:
       - "8080:8080"
